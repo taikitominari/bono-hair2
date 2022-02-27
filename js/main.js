@@ -12,8 +12,8 @@ var bar = new ProgressBar.Line(loading_text, {//id名を指定
           margin:'0',
           transform:'translate(-50%,-50%)',
           'font-family':'sans-serif',
-          'font-size':'1.5rem',
-          color:'#4DAD5C',
+          'font-size':'1.7rem',
+          color: '#696969',
       },
       autoStyleContainer: false //自動付与のスタイルを切る
   },
