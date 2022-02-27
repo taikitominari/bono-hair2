@@ -86,3 +86,55 @@ header{
 }
 
 /* about */
+.about {
+  height: 800px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.about_logo {
+  padding: 150px 0 100px 0;
+  color: #696969;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.about_logo span {
+  border: 2px solid #4DAD5C;
+  margin: 0 7px;
+}
+.about_item {
+  display: flex;
+  margin-bottom: 130px;
+}
+.movie , .view {
+  flex: 6;
+}
+.about_text_item {
+  position: relative;
+  flex: 4;
+}
+.about_text_wrap {
+  line-height: 35px;
+  font-size: 16px;
+}
+.about_text_wrap_top {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  text-align: right;
+  margin-left: 10%;
+}
+.about_text_wrap_bottom {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  text-align: left;
+  margin-right: 10%;
+}
+.about_title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.about_text {
+  color: #696969;
+}
