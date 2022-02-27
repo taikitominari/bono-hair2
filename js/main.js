@@ -1,10 +1,10 @@
 'use strict';
-
-var bar = new ProgressBar.Line(loading_text, {//id名を指定
-  strokeWidth: 0,//進捗ゲージの太さ
-  duration: 1000,//時間指定(1000＝1秒)
-  trailWidth: 0,//線の太さ
-  text: {//テキストの形状を直接指定   
+loading
+var bar = new ProgressBar.Line(loading_text, {
+  strokeWidth: 0,
+  duration: 1000,
+  trailWidth: 0,
+  text: {
       style: {
           position:'absolute',
           left:'50%',
@@ -15,13 +15,32 @@ var bar = new ProgressBar.Line(loading_text, {//id名を指定
           'font-size':'1.7rem',
           color: '#696969',
       },
-      autoStyleContainer: false //自動付与のスタイルを切る
+      autoStyleContainer: false 
   },
   step: function(state, bar) {
-      bar.setText(Math.round(bar.value() * 100) + ' %'); //テキストの数値
+      bar.setText(Math.round(bar.value() * 100) + ' %');
   }
 });
-//アニメーションスタート
-bar.animate(1.0, function () {//バーを描画する割合を指定します 1.0 なら100%まで描画
-  $("#loading").delay(500).fadeOut(800);//アニメーションが終わったら#loadingをフェードアウト
+
+bar.animate(1.0, function () {
+  $("#loading").delay(500).fadeOut(800);
 });  
+
+// fadein
+
+let windowSize = $(window).height();
+
+$(window).scroll(function() {
+  let scrollPosition = $(this).scrollTop();
+  if(scrollPosition > $('.movie').offset().top - windowSize) {
+    $('.movie').addClass('movie_fadein');
+    $('.about_text_item_top').addClass('top_text_fadein');
+  }
+})
+$(window).scroll(function() {
+  let scrollPosition = $(this).scrollTop();
+  if(scrollPosition > $('.view').offset().top - windowSize) {
+    $('.view').addClass('view_fadein');
+    $('.about_text_item_bottom').addClass('bottom_text_fadein');
+  }
+})

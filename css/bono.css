@@ -106,13 +106,45 @@ header{
   display: flex;
   margin-bottom: 130px;
 }
+
 .movie , .view {
   flex: 6;
 }
-.about_text_item {
+.movie {
   position: relative;
-  flex: 4;
+  right: 100%;
+  transition: 1.3s;
 }
+.view {
+  position: relative;
+  left: 100%;
+  transition: 1.3s;
+}
+.movie.movie_fadein {
+  right: 0;
+}
+.view.view_fadein {
+  left: 0;
+}
+.about_text_item_top {
+  position: relative;
+  left: 100%;
+  flex: 4;
+  transition: 1.6s;
+}
+.about_text_item_top.top_text_fadein {
+  left: 0;
+}
+.about_text_item_bottom {
+  position: relative;
+  right: 100%;
+  flex: 4;
+  transition: 1.6s;
+}
+.about_text_item_bottom.bottom_text_fadein {
+  right: 0;
+}
+
 .about_text_wrap {
   line-height: 35px;
   font-size: 16px;
@@ -134,6 +166,7 @@ header{
 .about_title {
   margin-bottom: 20px;
   font-size: 25px;
+  color: #007700;
 }
 .about_text {
   color: #696969;
