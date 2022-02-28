@@ -46,9 +46,8 @@ header{
 }
 .bono {
   display: flex;
-  justify-content: space-between;
   margin-left: 5%;
-  flex: 2;
+  flex: 3;
 }
 .bono h1 {
   color:#4DAD5C;
@@ -56,7 +55,7 @@ header{
   padding-right: 10px;
 }
 .header_list {
-  flex: 8;
+  flex: 7;
   display: flex;
   margin: 0 5% 0 15%;
   justify-content: flex-end;
@@ -72,6 +71,7 @@ header{
 }
 .icon{
   font-size: 20px;
+  margin-left: 5%;
 }
 .icon:hover {
   color: #4DAD5C;
@@ -106,6 +106,7 @@ header{
 .about_item {
   display: flex;
   margin-bottom: 150px;
+  position: relative;
 }
 
 .movie , .view {
@@ -166,7 +167,7 @@ header{
 }
 .about_title {
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 22px;
   color: #007700;
 }
 .about_text {
