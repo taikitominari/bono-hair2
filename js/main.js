@@ -26,6 +26,14 @@ bar.animate(1.0, function () {
   $("#loading").delay(500).fadeOut(800);
 });  
 
+// 画像切り替え
+$('.top img:nth-child(n+2)').hide();
+setInterval(function() {
+  $(".top img:first-child").fadeOut(2000);
+  $(".top img:nth-child(2)").fadeIn(2000);
+  $(".top img:first-child").appendTo(".top");
+}, 5000);
+
 // なめらかに動く
 $(function(){
   $('a[href^="#"]').click(function(){
