@@ -26,8 +26,20 @@ bar.animate(1.0, function () {
   $("#loading").delay(500).fadeOut(800);
 });  
 
-// fadein
+// なめらかに動く
+$(function(){
+  $('a[href^="#"]').click(function(){
+    var adjust = 0;
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top + adjust;
+    $('body,html').animate({scrollTop:position}, speed, 'swing');
+    return false;
+  });
+});
 
+// fadein
 let windowSize = $(window).height();
 
 $(window).scroll(function() {
