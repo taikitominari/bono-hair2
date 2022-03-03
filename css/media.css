@@ -34,4 +34,23 @@
   .movie,.view {
     flex: 7;
   }
+  /* stylist */
+  #stylist {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .stylist_item {
+    display: block;
+  }
+  .stylist_text_item {
+    padding-top: 40px;
+    margin-left: 0;
+  }
+  .stylist_text {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .stylist_list li {
+    font-size: 18px;
+  }
 }

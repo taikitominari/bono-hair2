@@ -270,16 +270,16 @@ header{
   padding: 10px 0 20px 0;
 }
 .name {
-  font-size: 22px;
+  font-size: 18px;
   margin-left: 3%;
   color: #4DAD5C;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .stylist_list li {
   padding-top: 7px;
 }
 .stylist_text {
   padding-top: 30px;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 17px;
+  line-height: 30px;
 }
