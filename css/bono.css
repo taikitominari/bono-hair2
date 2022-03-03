@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 /* loading */
 #loading {
   position: fixed;
@@ -139,12 +142,6 @@ header{
   border-color: #fff;
 } */
 
-/* about */
-#about{
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 150px;
-}
 .main_logo {
   margin: 0 0 80px 0;
   padding-top: 80px;
@@ -152,6 +149,13 @@ header{
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 1px;
+}
+ 
+/* about */
+#about{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 150px;
 }
 .main_logo span {
   border: 2px solid #ffd700;
@@ -169,24 +173,25 @@ header{
 .movie {
   position: relative;
   right: 100%;
-  transition: 1.3s;
+  transition: 2s;
 }
 .view {
   position: relative;
   left: 100%;
-  transition: 1.3s;
+  transition: 2s;
 }
 .movie.movie_fadein {
   right: 0;
 }
 .view.view_fadein {
+  opacity: 1;
   left: 0;
 }
 .about_text_item_top {
   position: relative;
   left: 100%;
   flex: 4;
-  transition: 1.5s;
+  transition: 2s;
 }
 .about_text_item_top.top_text_fadein {
   left: 0;
@@ -195,7 +200,7 @@ header{
   position: relative;
   right: 100%;
   flex: 4;
-  transition: 1.5s;
+  transition: 2s;
 }
 .about_text_item_bottom.bottom_text_fadein {
   right: 0;
@@ -239,21 +244,20 @@ header{
   justify-content: space-between;
 }
 .stylist_item:first-of-type {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .stylist_img{
   flex: 3;
   position: relative;
   right: 120%;
-  transition: 1.5s;
+  transition: 2.5s;
 }
 .stylist_text_item {
   flex: 7;
   position: relative;
   right: 120%;
   margin-left: 7%;
-  color: #696969;
-  transition: 1.2s;
+  transition: 2.2s;
 }
 .stylist_img.stylist_img_fadein {
   right: 0;
@@ -277,8 +281,10 @@ header{
 }
 .stylist_list li {
   padding-top: 7px;
+  color: #696969;
 }
 .stylist_text {
+  color: #696969;
   padding-top: 30px;
   font-size: 17px;
   line-height: 30px;

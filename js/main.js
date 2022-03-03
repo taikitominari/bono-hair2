@@ -1,5 +1,5 @@
 'use strict';
-loading
+// loading
 var bar = new ProgressBar.Line(loading_text, {
   strokeWidth: 0,
   duration: 1000,
