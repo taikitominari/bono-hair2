@@ -249,21 +249,25 @@ header{
 .stylist_img{
   flex: 3;
   position: relative;
-  right: 120%;
-  transition: 2.5s;
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: 2s;
 }
 .stylist_text_item {
   flex: 7;
   position: relative;
-  right: 120%;
+  transform: translateY(-150px);
+  opacity: 0;
   margin-left: 7%;
-  transition: 2.2s;
+  transition: 2s;
 }
 .stylist_img.stylist_img_fadein {
-  right: 0;
+  transform: translateY(0px);
+  opacity: 1
 }
 .stylist_text_item.stylist_text_item_fadein {
-  right: 0;
+  transform: translateY(0px);
+  opacity: 1
 }
 .stylist_type {
   font-size: 18px;
