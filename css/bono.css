@@ -44,7 +44,7 @@ header{
   opacity: 0.9;
   align-items: center;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
 }
 .bono {
   display: flex;
@@ -93,22 +93,26 @@ header{
   position: absolute;
 }
 
-.main_logo {
-  margin: 0 0 80px 0;
-  padding-top: 80px;
-  color: #696969;
-  font-size: 30px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
- 
+
 /* about */
 #about{
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 150px;
 }
-.main_logo span {
+.title_wrap {
+  display: inline-block;
+  margin: 0 0 80px 0;
+  padding-top: 80px;
+}
+.section_title {
+  color: #696969;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px 0;
+}
+.section_title span {
   border: 2px solid #ffd700;
   margin: 0 7px;
 }
@@ -184,46 +188,46 @@ header{
   color: #696969;
 }
 
-/* stylist */
-#stylist {
+/* STAFF */
+#staff {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 200px;
 }
-.stylist_item {
+.staff_item {
   display: flex;
   justify-content: space-between;
 }
-.stylist_item:first-of-type {
-  margin-bottom: 50px;
+#staff .staff_item:last-child {
+  margin-top: 50px;
 }
-.stylist_img{
+.staff_img{
   flex: 3;
   position: relative;
-  transform: translateY(-150px);
+  transform: translateY(-120px);
   opacity: 0;
   transition: 2s;
 }
-.stylist_text_item {
+.staff_text_item {
   flex: 7;
   position: relative;
-  transform: translateY(-150px);
+  transform: translateY(-120px);
   opacity: 0;
   margin-left: 7%;
   transition: 2s;
 }
-.stylist_img.stylist_img_fadein {
+.staff_img.staff_img_fadein {
   transform: translateY(0px);
   opacity: 1
 }
-.stylist_text_item.stylist_text_item_fadein {
+.staff_text_item.staff_text_item_fadein {
   transform: translateY(0px);
   opacity: 1
 }
-.stylist_type {
+.staff_type {
   font-size: 18px;
 }
-.stylist_name {
+.staff_name {
   font-size: 35px;
   letter-spacing: 5px;
   padding: 10px 0 20px 0;
@@ -234,11 +238,11 @@ header{
   color: #4DAD5C;
   letter-spacing: 1px;
 }
-.stylist_list li {
+.staff_list li {
   padding-top: 7px;
   color: #696969;
 }
-.stylist_text {
+.staff_text {
   color: #696969;
   padding-top: 30px;
   font-size: 17px;

@@ -66,8 +66,8 @@ $(window).scroll(function() {
 })
 $(window).scroll(function() {
   let scrollPosition = $(this).scrollTop();
-  if(scrollPosition > $('.stylist_img').offset().top - windowSize) {
-    $('.stylist_img').addClass('stylist_img_fadein');
-    $('.stylist_text_item').addClass('stylist_text_item_fadein');
+  if(scrollPosition > $('.staff_img').offset().top - windowSize) {
+    $('.staff_img').addClass('staff_img_fadein');
+    $('.staff_text_item').addClass('staff_text_item_fadein');
   }
 })
